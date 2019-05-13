@@ -1,4 +1,4 @@
-# Irene
+# Web
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
@@ -26,6 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+
 ## Publish
 `ng build --prod --base-href "https://irenetherese.github.io/"`
-`npx angular-cli-ghpages --no-silent --dir=dist/Irene`
+`npx angular-cli-ghpages --no-silent --dir=dist/web`
