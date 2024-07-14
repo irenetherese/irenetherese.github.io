@@ -1,0 +1,101 @@
+@import 'bootstrap/scss/bootstrap';
+
+app-root {
+    height: 100vh !important;
+    display: block;
+}
+
+// Variables
+$primary-color: #eff7f7;
+$secondary-color: #182a3b;
+$link-color: #2c6bcd;
+$font-family: 'Arial', sans-serif;
+
+// Global Styles
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: $secondary-color;
+
+    .portfolio-items {
+        .project-image {
+            width: 250px;
+            height: auto; // Maintain aspect ratio
+        }
+
+        .project-details {
+            min-width: 280px;
+        }
+        .card {
+            min-height: 130px;
+
+            &:hover {
+                cursor: pointer;
+                border: 1px solid $link-color !important;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        font-weight: bold;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 100vw;
+    margin: auto;
+}
+
+// Header Styles
+header {
+    background: $primary-color;
+    color: $secondary-color;
+    padding: 1rem 0;
+
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .profile-pic {
+        width: 180px;
+        height: auto; // Maintain aspect ratio
+        border-radius: 50%; // Optional for a circular image
+        margin-right: 2rem; // Spacing between image and text
+    }
+
+    .social-links {
+        margin-top: 1rem;
+    }
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $secondary-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+// Footer Styles
+footer {
+    background: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 1rem 0;
+}
