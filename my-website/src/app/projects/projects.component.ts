@@ -9,6 +9,12 @@ import { Router } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
+      title: "Feel Factor",
+      image: "/projects/ml3/images/Title.PNG",
+      description: "Decoding Emotions Inside and Out",
+      link: "ml3"
+    },
+    {
       title: "Bet Smart",
       image: "/projects/ml2/title.png",
       description: "Predicting VNL Match Outcomes Through Machine Learning",
