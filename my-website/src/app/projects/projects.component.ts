@@ -9,6 +9,12 @@ import { Router } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
+      title: "Spark up Your Game",
+      image: "/projects/bdcc/bdccbanner.png",
+      description: "Per Round CS:GO Predictions for Enhanced Sports Analytics \nCo-Authors: Raymundo Java Jr., Shem Harold Castillo, Karth Ian Macalalad",
+      link: "bdcc"
+    },
+    {
       title: "Feel Factor",
       image: "/projects/ml3/images/Title.PNG",
       description: "Decoding Emotions Inside and Out \nCo-Authors: Kiana Alessandra Villaera, Julius Cris Salinas, Roderick Ilagan, Leonard Gail Rizada",
@@ -49,6 +55,6 @@ export class ProjectsComponent {
   constructor(private router: Router) { }
 
   navigateToProject(link: string) {
-    this.router.navigate([link]);
+    this.router.navigate([link]); 
   }
 }

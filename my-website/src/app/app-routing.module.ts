@@ -7,6 +7,8 @@ import { Ml1Component } from './projects/ml-1/ml-1.component';
 import { Ml2Component } from './projects/ml-2/ml-2.component';
 import { Ml3Component } from './projects/ml-3/ml-3.component';
 import { AdmComponent } from './projects/adm/adm.component';
+import { BdccComponent } from './projects/bdcc/bdcc.component';
+import { NsComponent } from './projects/ns/ns.component';
 
 const routes: Routes = [
   { path: '', component: ProjectsComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'ml2', component: Ml2Component },
   { path: 'ml3', component: Ml3Component },
   { path: 'adm', component: AdmComponent },
+  { path: 'bdcc', component: BdccComponent },
+  { path: 'ns', component: NsComponent },
 ];
 
 @NgModule({
