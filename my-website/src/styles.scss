@@ -6,9 +6,9 @@ app-root {
 }
 
 // Variables
-$primary-color: #eff7f7;
-$secondary-color: #182a3b;
-$link-color: #2c6bcd;
+$primary-color: #e3f5e7;
+$secondary-color: #172911;
+$link-color: #035114;
 $font-family: 'Arial', sans-serif;
 
 // Global Styles
@@ -38,6 +38,7 @@ body {
 
     h1 {
         font-size: 2rem;
+        color: $secondary-color;
     }
 
     h2 {
@@ -98,4 +99,21 @@ footer {
     color: $secondary-color;
     text-align: center;
     padding: 1rem 0;
+}
+
+iframe {
+    border: solid 1px lightgray !important;
+}
+
+p {
+    color: $secondary-color !important;
+}
+
+h5 {
+    color: $link-color !important;
+}
+
+.btn-primary {
+    background-color: $link-color !important;
+    border-color:  $link-color !important;
 }
