@@ -31,9 +31,20 @@
 </header>
 
 <body class="d-flex flex-1 flex-column py-4">
+  <div class="project-tabs">
+    <a class="project-tab" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <i class="bi bi-bar-chart"></i>
+      <span> Data Science Projects</span>
+    </a>
+
+    <a class="project-tab" [routerLink]="['/others']" routerLinkActive="active">
+      <i class="bi bi-grid"></i>
+      <span>Other Projects</span>
+    </a>
+  </div>
+
   <router-outlet></router-outlet>
 </body>
-
 <!-- Footer -->
 <footer>
   <div class="container">

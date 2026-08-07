@@ -1,0 +1,29 @@
+p {
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.card-img-top {
+    width: 100% !important;
+    height: 160px !important;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.card-text {
+    word-wrap: break-word;
+    text-wrap: auto;
+}
+
+.author {
+    color: gray;
+}
+
+
+.card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}

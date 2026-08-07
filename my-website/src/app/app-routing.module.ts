@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProjectsComponent } from './projects/projects.component';
+import { Projects2Component } from './projects/projects-2.component';
 import { Dmw1Component } from './projects/dmw-1/dmw-1.component';
 import { Dmw2Component } from './projects/dmw-2/dmw-2.component';
 import { Ml1Component } from './projects/ml-1/ml-1.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'adm', component: AdmComponent },
   { path: 'bdcc', component: BdccComponent },
   { path: 'ns', component: NsComponent },
+  { path: 'others', component: Projects2Component }
 ];
 
 @NgModule({
