@@ -23,7 +23,13 @@ p {
 }
 
 
-.card:hover {
+.portfolio-items .card:hover {
     transform: none !important;
     box-shadow: none !important;
+    border-color: rgba(0, 0, 0, 0.175) !important;
+    cursor: unset !important;
+}
+
+.portfolio-items .card a > h5 {
+    text-decoration: underline;
 }

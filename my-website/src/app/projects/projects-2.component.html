@@ -8,7 +8,9 @@
                 <div class="col-md-4 mb-4" *ngFor="let project of projects; let i = index">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">{{ project.title }}</h5>
+                            <a [href]="project.link" target="_blank" rel="noopener noreferrer">
+                                <h5 class="card-title">{{ project.title }}</h5>
+                            </a>
                             <br>
                             <p class="card-text">
                                 Repository:
