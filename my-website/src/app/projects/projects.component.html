@@ -10,8 +10,18 @@
                         <img class="card-img-top project-image" src="{{ project.image }}" alt="{{ project.title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ project.title }}</h5>
-                            <p class="card-text">{{ project.description }}</p>
-                            <p class="card-text author"><small><em>Co-Authors: {{ project.co_authors.join(', ') }}</em></small></p>
+                            <p class="card-text">
+                                <span>{{ project.description }}</span>
+                                <br>
+                                <button class="btn btn-link p-0 mb-1" type="button"
+                                    (click)="$event.stopPropagation(); project.showDetails = !project.showDetails">
+                                    {{ project.showDetails ? 'See less' : 'See more details' }}
+                                </button>
+                                <br>
+                                <span *ngIf="project.showDetails">{{ project.description_long }}</span>
+                            </p>
+                            <p class="card-text author"><small><em>Co-Authors: {{ project.co_authors.join(', ')
+                                        }}</em></small></p>
                         </div>
                     </div>
                 </div>
